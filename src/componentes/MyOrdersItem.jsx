@@ -20,6 +20,6 @@ const MyOrdersItem = () => {
       </Link>
     </div>
   );
-}
+};
 
 export default MyOrdersItem;

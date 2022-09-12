@@ -2,14 +2,14 @@ import React, { useContext } from 'react';
 import Image from 'next/image';
 import AppContext from '@Context/AppContext';
 import iconClose from "@Iconos/icon_close.png";
-import styles from "@Styles/ShoppingCartItem.module.scss"
+import styles from "@Styles/ShoppingCartItem.module.scss";
 
 const ShoppingCartItem = ( { product, keyIndex } ) => {
   const { removeFromCart } = useContext(AppContext);
   
   const handleRemove = () => {
     removeFromCart(keyIndex);
-  }
+  };
 
   return (
     <div className={styles.ShoppingCartItem}>
@@ -32,6 +32,6 @@ const ShoppingCartItem = ( { product, keyIndex } ) => {
       />
     </div>
   );
-}
+};
 
 export default ShoppingCartItem;

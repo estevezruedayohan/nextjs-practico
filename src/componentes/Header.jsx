@@ -71,6 +71,6 @@ const Header = () => {
       {toggleOrders && <ShoppingCart actionToPerform={handleToggleMyOrder}/> }
     </nav>
   );
-}
+};
 
 export default Header;

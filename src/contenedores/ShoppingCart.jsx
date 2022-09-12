@@ -4,8 +4,7 @@ import Link from 'next/link';
 import ShoppingCartItem from '@Componentes/ShoppingCartItem';
 import AppContext from '@Context/AppContext';
 import back from "@Iconos/flechita.svg";
-// import '@Styles/ShoppingCart.scss';
-import styles from "@Styles/ShoppingCart.module.scss"
+import styles from "@Styles/ShoppingCart.module.scss";
 
 
 const ShoppingCart = ( props ) => {
@@ -17,7 +16,7 @@ const ShoppingCart = ( props ) => {
     const reducer = (accumulator, currentValue) => accumulator + currentValue.price; 
     const sum = state.cart.reduce(reducer, 0);
     return sum;
-  }
+  };
   
 
   return (
@@ -50,6 +49,6 @@ const ShoppingCart = ( props ) => {
       </div>
     </aside>
   );
-}
+};
 
 export default ShoppingCart;

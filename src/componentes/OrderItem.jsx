@@ -16,6 +16,6 @@ const OrderItem = () => {
       <p>$30,00</p>
     </div>
   );
-}
+};
 
 export default OrderItem;
