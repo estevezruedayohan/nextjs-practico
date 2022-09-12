@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import Axios from 'axios';
 
 const useGetProducts = (API) => {
@@ -8,16 +8,16 @@ const useGetProducts = (API) => {
   //   const response = await Axios(API);
   //   setProducts(response.data);
   // }, []);
-  
+
   useEffect(() => {
-    (async () => {
-        const response = await Axios(API);	  
-        setProducts(response.data);
-    })();
-  }, []);
+    async function fetchData() {
+      const response = await Axios(API);
+      setProducts(response.data);
+    }
+    fetchData();
+  }, [API]);
+
   return products;
 };
-
-
 
 export default useGetProducts;
