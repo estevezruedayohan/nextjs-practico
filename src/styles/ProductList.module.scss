@@ -1,0 +1,15 @@
+
+.ProductList {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fill, 240px);
+  margin-top: 1rem;
+  place-content: center;
+}
+
+@media (max-width: 640px) {
+  .ProductList {
+    grid-template-columns: repeat(auto-fill, 140px);
+  }
+  
+}

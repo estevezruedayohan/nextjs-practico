@@ -1,0 +1,21 @@
+@import './vars';
+
+.MyOrders {
+  display: grid;
+  height: calc(100vh - 61px);
+  place-items: center;
+  width: 100%;
+}
+.title {
+  font-size: $--lg;
+  margin-bottom: 40px;
+}
+.MyOrders-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+.MyOrders-content {
+  display: flex;
+  flex-direction: column;
+}
