@@ -4,7 +4,15 @@
 
 // module.exports = nextConfig
 
-module.exports = {
+const withPWA = require('next-pwa');
+
+module.export = withPWA({
+    pwa: {
+        dest: 'public',
+        register: true,
+        mode: 'production',
+        disable: false,
+    },
     reactStrictMode: true,
     images: {
         domains: [
@@ -14,4 +22,5 @@ module.exports = {
             'images.pexels.com',
         ],
     },
-}
+});
+
